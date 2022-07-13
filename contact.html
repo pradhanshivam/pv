@@ -3,32 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>contact <details></details>
-    </title>
+    <title>contact details  </title>
 </head>
 
 <body>
-    <p><strong>MY Contact Details</strong></p>
-    <p><strong>MY fictional address</strong></p>
-    <p>NIT Srinagar</p>
-    <p>Phone no. : 0849273964</p>
-    <p>Email id. : fuoelh339@gmail.com</p>
-    <hr>
+
+    <header>
+        <h1>Contact details</h1>
+    </header>
+    <main>
+        <div>
+            <h2>MY fictional address</h2>
+            <p>NIT Srinagar</p>
+            <p>Phone no. : 0849273964</p>
+            <p>Email id. : fuoelh339@gmail.com</p>
+            <hr>
+        </div>
+
+        <caption><h2>fill this form to contact me</h2></caption>
+        <form action="mailto shivam2003padhan@gmail.com" method="post" enctype="text/plain">
+        <div class="details">
+                <label for="nameid">Your Name : 
+                <input type="text" name="Your Name:" placeholder="Enter your name" id="nameid"><br>
+                </label>
+
+                <div class="gender">
+                    <big>Select your Gender:</big><br>
+                    <label for="Male">
+                        <input type="radio" value="Male" name="gender" id="Male">Male
+                    </label>
+                    <label for="Female">
+                        <input type="radio" value="Male" name="gender" id="Female">Female
+                    </label>       
+                    <label for="Neutral">
+                        <input type="radio" value="Male" name="gender" id="Neutral">Neutral/chakka
+                    </label><br>
+                </div>
+                <label for="emailid">Your Email :
+                <input type="email" name="Your Email" placeholder="Enter your email" id="emailid"><br>
+                </label>
+                <label>Your message : </label><br>
+                <textarea name="Your Message " placeholder="Type your message" id="message" cols="50" rows="4"></textarea><br>
+                    <p>if you have filled all the information then tick the box below and submit the form</p>
+                <select name="qualification" id="qualification">
+                    <option value="no-qualification">select your qualification</option>
+                    <option value="matriculation">matriculation</option>
+                    <option value="intermediate">intermediate</option>  
+                    <option value="Degree">Degree</option>
+                </select>    
+                <input type="checkbox" id="">
+                <input type="submit"><br>
+            </form>
+        </div>
+    </main>
     <hr>
 
-    <form action="index.html" method="post" enctype="text/plain">
-        <label>YOUR NAME: </label>
-        <input type="text" name="Your Name:"><br>
-        <label>Your Email</label>
-        <input type="email" name="Your Email" value=""><br>
-        <label>Your message</label><br>
-        <textarea name="Type Your Message " cols="150" rows="4"> type </textarea><br>
-        <ul>
-            <label>if you have filled all the information then tick the box below and submit the form </label><br>
-        </ul>
-        <input type="checkbox" name="" id="">
-        <input type="submit"><br>
-    </form>
+
 </body>
 
 </html>
